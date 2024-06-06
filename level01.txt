@@ -1,0 +1,8 @@
+1. less /etc/passwd
+
+2. flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash => not in shadow file
+
+3. we used john the ripper
+
+flag01: abcdefg
+level02: f2av5il02puano7naaf6adaaf

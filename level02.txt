@@ -1,0 +1,10 @@
+1. ls -la => level02.pcap
+
+2. tcpdump -qns 0 -X -r level02.pcap
+
+3. tshark -z follow,tcp,ascii,0 -P -r level02.pcap
+
+4. ft_wandr...NDRel.L0L => remove dots and previous characters, as it's ASCII for DEL (F7)
+
+flag02: ft_waNDReL0L
+level03: kooda2puivaav1idi4f57q8iq

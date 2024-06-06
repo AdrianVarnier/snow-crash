@@ -1,0 +1,12 @@
+1. ls / -laR 2>/dev/null | grep flag00
+
+2. find / 2>/dev/null -type f -name "john"
+
+3. cat /rofs/usr/sbin/john
+
+4. cdiiddwpgswtgt
+
+5. we used dCode => affine
+
+flag00: nottoohardhere
+level01: x24ti5gi3x0ol2eh4esiuxias

@@ -1,0 +1,10 @@
+1. Create Nat Network in VB + associate first adapter to the newly created nat network
+
+2. Create rule for first VM => guest port: put the associated ssh port / host port: whatever you
+want // guestIP: eth0 ifconfig of first VM / host IP: localhost or nothing
+
+3. Same for second VM (22 is default ssh port)
+
+4. To connect from one VM to the other => ssh {username}@{ipaddr} -p {guestport}
+
+5. To connect from host to one of the VM => ssh {username}@localhost -p {hostport}

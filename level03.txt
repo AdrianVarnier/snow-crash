@@ -1,0 +1,13 @@
+1. ls -la
+
+2. check 's' permission + cat level03
+
+3. read about exploiting path variables
+
+4. found a directory with sufficient rights to create files
+
+5. created echo executable with "getflag" in it
+
+4. added /var/crash to /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+level04: qi0maab88jeaj46qoumi7maus

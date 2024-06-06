@@ -1,0 +1,19 @@
+1. ls -la, cat /etc/passwd, ls / -laR 2>/dev/null | grep flag05... (useless)
+
+3. ls / -laR 2>/dev/null | grep mail =>
+    /var/mail:
+drwxrwsr-x  1 root mail  60 Mar  5  2016 .
+-rw-r--r--+ 1 root mail  58 Jun  6 11:36 level05
+
+4. cat level05
+*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+
+5. cat /usr/sbin/openarenaserver =>
+#!/bin/sh
+
+for i in /opt/openarenaserver/* ; do
+        (ulimit -t 5; bash -x "$i")
+        rm -f "$i"
+done
+
+5. 
