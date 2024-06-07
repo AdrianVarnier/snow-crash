@@ -4,7 +4,7 @@
 
 2. in other terminal: scp -P 4243 level06@localhost:/home/user/level06/level06 .
 
-3. https://dogbolt.org => analyse binary in C output
+
 
 4. cat level06.php => 
 #!/usr/bin/php

