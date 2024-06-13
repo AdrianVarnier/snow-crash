@@ -1,0 +1,9 @@
+1. ls -la
+
+2. scp -P 4243 level13@localhost:/home/user/level13/level13 . 
+
+3. gdb level13
+
+4. change value of uid to the one that gives us access
+
+level14: 2A31L79asukciNyi8uppkEuSx
