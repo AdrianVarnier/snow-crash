@@ -29,14 +29,12 @@
 
     while true; do
             /home/user/level10/level10 /var/crash/mylink 127.0.0.1
-            sleep(1)
     done
 -----
     #!/bin/bash
 
     while true; do
             nc -l 6969
-            sleep(1)
     done
 -----
 
