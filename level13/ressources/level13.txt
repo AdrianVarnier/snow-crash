@@ -1,9 +1,15 @@
 1. ls -la
 
 2. scp -P 4243 level13@localhost:/home/user/level13/level13 . 
+to analyse the code with dogbolt
 
 3. gdb level13
 
-4. change value of uid to the one that gives us access
+4. use gdb to modify getuid return value
+    disas main
+    b getuid
+    step
+    $eax=4242
+    next
 
 level14: 2A31L79asukciNyi8uppkEuSx
